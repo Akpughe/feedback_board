@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --gradient-pattern: radial-gradient(
+      ellipse at right top,
+      rgba(232, 77, 112, 1) 0%,
+      rgba(163, 55, 246, 1) 60%,
+      rgba(40, 167, 237, 1) 100%
+    );
+    --bg-color: #f6f7fd;
+  }
+
+  @layer base {
+    body{
+        background-color: var(--bg-color);
+        font-family: 'Jost', sans-serif, Helvetica, Arial, sans-serif;
+    }
+  }
+
+.page-container{
+    max-width: 1024px;
+    margin: 0 auto;
+
+    padding: 3.5rem 2.5rem;
+}
+
+.header-container {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 30px 10px; 
+    grid-template-areas: 
+      "."
+      "."
+      "."; 
+
+    max-width: 15.9375rem;
+    width: 100%;
+    position: sticky;
+    top: 3.5rem;
+}
+
+.gradient-bg {
+    background: var(--gradient-pattern);
+}
