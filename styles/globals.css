@@ -25,6 +25,14 @@
     margin: 0 auto;
 
     padding: 3.5rem 2.5rem;
+
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: 1fr ; 
+    gap: 0px 1.875rem; 
+    grid-template-areas: 
+      ". .";
 }
 
 .header-container {
@@ -32,14 +40,14 @@
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
-    gap: 30px 10px; 
+    gap: 1.5rem 10px; 
     grid-template-areas: 
       "."
       "."
       "."; 
 
     max-width: 15.9375rem;
-    width: 100%;
+    /* width: 100%; */
     position: sticky;
     top: 3.5rem;
 }
