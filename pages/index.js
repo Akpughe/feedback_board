@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import Header from '../components/Header';
+import FeedbackCard from '../components/FeedbackCard';
 import SortOptions from '../components/SortOptions';
 import items from '../data/results';
 
@@ -33,19 +34,33 @@ export default function Home() {
       );
     }
 
+    if(selectedFilterOption === 'All'){
+      result = items;
+    }
+
     return result;
   });
 
   console.log(filteredRequests);
   return (
-    <div className="page-container flex">
-      <Header
-        selectedFilterOption={selectedFilterOption}
-        setSelectedFilterOption={setSelectedFilterOption}
-        filter={filter}
-      />
-      <div className=" mx-6 "></div>
-      <SortOptions />
+    <div className="page-container">
+      <div>
+        <Header
+          selectedFilterOption={selectedFilterOption}
+          setSelectedFilterOption={setSelectedFilterOption}
+          filter={filter}
+        />
+      </div>
+
+      {/* <div className=" mx-6 "></div> */}
+      <div className=''>
+        <SortOptions />
+        <div className="mt-6">
+          {filteredRequests?.map((requests) => (
+            <FeedbackCard {...requests} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
