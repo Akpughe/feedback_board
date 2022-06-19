@@ -9,7 +9,7 @@ import Link from 'next/link';
 //   { id: 4, name: 'Least Comments' },
 // ];
 
-const SortOptions = ({ sortOption, setSortOption,sort}) => 
+const SortOptions = ({ sortOption, setSortOption,sort}) => {
   const optionsWrapperClassName =
     'absolute top-14 overflow-auto bg-white rounded-md shadow-dropdown max-h-60 focus:outline-none divide-y divide-secondary divide-opacity-10 w-[15.9375rem]';
   return (
