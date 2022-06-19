@@ -38,6 +38,7 @@ const Header = ({ filter, selectedFilterOption, setSelectedFilterOption }) => {
           )}
           <div>
             <h1 className="font-bold text-xl">Frontend Mentor</h1>
+            <p className='font-light text-base opacity-60'>Feedback Board</p>
           </div>
         </div>
       </div>
@@ -59,7 +60,7 @@ const Header = ({ filter, selectedFilterOption, setSelectedFilterOption }) => {
                     key={option}
                     value={option}
                     className={({ checked }) =>
-                      `px-4 py-2 rounded-lg font-medium text-sm ml-2 mb-2 cursor-pointer ${
+                      `px-4 py-2 rounded-lg font-medium text-small ml-2 mb-2 cursor-pointer ${
                         checked ? 'bg-[#4760e7]' : 'bg-[#f2f4ff]'
                       }`
                     }
@@ -85,8 +86,10 @@ const Header = ({ filter, selectedFilterOption, setSelectedFilterOption }) => {
 
       <div className="bg-white rounded-xl h-[11.125rem] w-full p-6">
         <div className="flex items-center justify-between">
-          <p>Roadmaps</p>
-          <Link href="/">View</Link>
+          <p className='font-bold text-lg'>Roadmaps</p>
+          <Link href="/">
+            <a className='text-[.8125rem] font-semibold text-[#4963e7]'>View</a>
+          </Link>
         </div>
 
         <div className="mt-6 mb-4">
