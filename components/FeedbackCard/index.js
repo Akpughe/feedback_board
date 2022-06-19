@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const FeedbackCard = ({ title, fullname, category, comment, detail, upcount }) => {
+const FeedbackCard = ({ title, fullname, category, comment, detail, upcount, guid }) => {
   return (
     <div className="flex rounded-2xl p-6 bg-white mt-6">
       <div className="flex flex-col items-center justify-center bg-[#f2f4ff] rounded px-3 py-2 h-fit">
@@ -18,7 +18,7 @@ const FeedbackCard = ({ title, fullname, category, comment, detail, upcount }) =
         <div className="font-bold text-xs mt-1 text-[#394473]">{upcount}</div>
       </div>
       <div className="mx-3"></div>
-      <Link href="/">
+      <Link href={`/${guid}`}>
         <div className="flex flex-col cursor-pointer">
           <div className='flex'>
           <div className='mr-2'>
