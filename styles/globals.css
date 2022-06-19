@@ -35,6 +35,10 @@
       ". .";
 }
 
+.text-small{
+  font-size: .8125rem
+}
+
 .header-container {
     display: grid; 
     grid-auto-columns: 1fr; 
