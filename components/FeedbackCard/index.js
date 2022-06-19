@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const FeedbackCard = ({ title, fullname, category, comment, detail, upcount }) => {
   return (
-    <div className="flex rounded-2xl p-6 bg-white mt-8">
+    <div className="flex rounded-2xl p-6 bg-white mt-6">
       <div className="flex flex-col items-center justify-center bg-[#f2f4ff] rounded px-3 py-2 h-fit">
         <svg
           className="text-[#4963e7]"
@@ -30,8 +30,8 @@ const FeedbackCard = ({ title, fullname, category, comment, detail, upcount }) =
             />
           </div>
           <div>
-            <h1 className="font-bold text-sm capitalize">{fullname}</h1>
-            <p className="text-sm  font-light text-[#647196] capitalize">
+            <h1 className="font-bold text-small capitalize">{fullname}</h1>
+            <p className="text-small  font-light text-[#647196] capitalize">
               14 sep, 2021
             </p>
           </div>
@@ -39,11 +39,11 @@ const FeedbackCard = ({ title, fullname, category, comment, detail, upcount }) =
           <p className="font-bold mt-2 text-[#394473]">
            {title}
           </p>
-          <p className="font-light text-sm text-[#647196] mt-1">
+          <p className="font-light text-small text-[#647196] mt-1">
            {detail}
           </p>
 
-          <div className="px-4 py-2 mt-3 rounded-lg font-medium text-sm mb-2 cursor-pointer bg-[#f2f4ff] w-fit">
+          <div className="px-4 py-2 mt-3 rounded-lg font-medium text-small mb-2 cursor-pointer bg-[#f2f4ff] w-fit">
             {category}
           </div>
         </div>
@@ -63,7 +63,7 @@ const FeedbackCard = ({ title, fullname, category, comment, detail, upcount }) =
               fill="currentColor"
             ></path>
           </svg>
-          <div className="text-sm font-bold ml-2">{comment}</div>
+          <div className="text-small font-bold ml-2">{comment}</div>
         </div>
       </div>
     </div>
