@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FeedbackCard from '../components/FeedbackCard';
 import Link from 'next/link';
 const ViewPost = ({ page }) => {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
   console.log(page);
   return (
     <main className="max-w-[40rem] m-auto px-6 py-8">
@@ -34,12 +34,12 @@ const ViewPost = ({ page }) => {
         </div>
         <div className="flex items-center justify-between mt-4">
           <div>
-            {/* {user ? null : <p>Login to comment</p>} */}
-            <p className=''>Login to comment</p>
+            {user ? null : <p>Login to comment</p>}
+            {/* <p className=''>Login to comment</p> */}
             </div>
           <div>
             <button className="flex items-center justify-center font-bold text-sm text-white rounded-lg px-8 h-11 bg-[#ad20ea]">
-              {user ? 'Comment':'Post'}
+              {user ? 'Comment':'Login'}
             </button>
           </div>
         </div>
