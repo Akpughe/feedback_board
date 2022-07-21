@@ -15,8 +15,8 @@ const Header = ({ filter, selectedFilterOption, setSelectedFilterOption }) => {
               <p>@author</p>
             </div>
           ) : (
-            <Link href="/login">
-              <div className="flex space-x-2">
+            <Link href="/auth">
+              <div className="flex space-x-2 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -86,8 +86,8 @@ const Header = ({ filter, selectedFilterOption, setSelectedFilterOption }) => {
 
       <div className="bg-white rounded-xl h-[11.125rem] w-full p-6">
         <div className="flex items-center justify-between">
-          <p className='font-bold text-lg'>Roadmaps</p>
-          <Link href="/">
+          <p className='font-bold text-[#3A4374] text-lg'>Roadmaps</p>
+          <Link href="/roadmap">
             <a className='text-[.8125rem] font-semibold text-[#4963e7]'>View</a>
           </Link>
         </div>

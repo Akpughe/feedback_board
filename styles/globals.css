@@ -60,13 +60,21 @@
   background: var(--gradient-pattern);
 }
 
-.slide::before{
-  content: '';
+.kanban_grid{
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 10px 10px; 
+  grid-template-areas: 
+    ". . .";
+}
 
-  width: 100%;
-  height: 100%;
-  background: var(--gradient-pattern);
-  z-index: -1;
+.slide {
+  /* transition: all .75s ease; */
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
 }
 
 [type='text'],

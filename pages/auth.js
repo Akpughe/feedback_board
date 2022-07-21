@@ -22,7 +22,7 @@ const Auth = () => {
         {/* tab */}
         <div className="flex justify-center w-full h-12 mt-10 border-b">
           <div
-            className={`${
+            className={`slide ${
               screen == 'login'
                 ? ` font-bold text-[#3A4374] border-b-4 border-[#ad20ea] transition-transform`
                 : ''
