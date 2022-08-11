@@ -23,7 +23,7 @@ const Signup = () => {
       </div>
       <div className="mt-8">
         <button
-          class="flex items-center justify-center w-full font-bold text-xs text-white rounded-lg px-8 h-11 bg-[#ad20ea]"
+          className="flex items-center justify-center w-full font-bold text-xs text-white rounded-lg px-8 h-11 bg-[#ad20ea]"
           type="submit"
         >
           Sign up

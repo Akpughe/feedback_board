@@ -17,12 +17,12 @@ const New = () => {
               height="1em"
               viewBox="0 0 5 10"
               fill="none"
-              class="text-alternate"
+              className="text-alternate"
             >
               <path
                 d="M4 9L0 5l4-4"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
               ></path>
             </svg>
             <span className="font-bold text-small">Go Back</span>
@@ -58,12 +58,12 @@ const New = () => {
                       height="1em"
                       viewBox="0 0 9 7"
                       fill="none"
-                      class="text-black ml-2 text-[.5rem]"
+                      className="text-black ml-2 text-[.5rem]"
                     >
                       <path
                         d="M1 1l4 4 4-4"
                         stroke="currentColor"
-                        stroke-width="2"
+                        strokeWidth="2"
                       ></path>
                     </svg>
                   </span>
@@ -142,16 +142,16 @@ const New = () => {
             ></textarea>
           </div>
           {/* buttons */}
-          <div class="flex space-x-4 justify-between mt-8">
-            <div class="flex space-x-4 ml-auto">
+          <div className="flex space-x-4 justify-between mt-8">
+            <div className="flex space-x-4 ml-auto">
               <button
-                class="flex items-center justify-center font-bold text-xs text-white rounded-lg px-8 h-11 bg-[#394473]"
+                className="flex items-center justify-center font-bold text-xs text-white rounded-lg px-8 h-11 bg-[#394473]"
                 type="button"
               >
                 Cancel
               </button>
               <button
-                class="flex items-center justify-center font-bold text-xs text-white rounded-lg px-8 h-11 bg-[#ad20ea]"
+                className="flex items-center justify-center font-bold text-xs text-white rounded-lg px-8 h-11 bg-[#ad20ea]"
                 type="submit"
               >
                 Add Feedback

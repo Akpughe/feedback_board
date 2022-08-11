@@ -14,12 +14,12 @@ const ViewPost = ({ page }) => {
               height="1em"
               viewBox="0 0 5 10"
               fill="none"
-              class="text-alternate"
+              className="text-alternate"
             >
               <path
                 d="M4 9L0 5l4-4"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
               ></path>
             </svg>
             <span className="font-bold text-small">Go Back</span>
@@ -28,7 +28,7 @@ const ViewPost = ({ page }) => {
       </div>
       <FeedbackCard {...page} />
       <form action="" className="bg-white rounded-md p-6 mt-6">
-        <h3 class="text-lg font-bold">Add Comment</h3>
+        <h3 className="text-lg font-bold">Add Comment</h3>
         <div>
           <textarea name="" id="" className="border w-full px-6"></textarea>
         </div>

@@ -18,12 +18,12 @@ const Roadmap = () => {
                 height=".75em"
                 viewBox="0 0 5 10"
                 fill="none"
-                class="text-alternate"
+                className="text-alternate"
               >
                 <path
                   d="M4 9L0 5l4-4"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                 ></path>
               </svg>
               <span className="font-bold text-sm">Go Back</span>
